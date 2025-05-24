@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dcc7;
+    font-family: "Courier Prime", serif;
+
+    h1,h2,h3,h4{
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.Main-container {
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 700px;
+    padding-top: 20px;
+
+    h1{
+        font-weight: 700;
+        padding-left: 1em;
+        /* margin-inline: 1rem; */
+    }
+
+    nav{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    
+    ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        list-style: none;
+        /* padding: 10px; */
+
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+    }
+}
+
+header li:hover{
+    transform: scale(1.2);
+}
+
+#contact-list{
+    position: relative;
+}
+
+#contact-list:hover {
+    background-color: #f1d5b0;
+}
+
+#contact-list:hover #contact-list-list {
+    display: block;
+}
+
+#contact-list-list {
+    display: none;
+    position: absolute;
+    background-color: rgba(241, 213, 176, 0.6);
+    padding: 8px;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+/* Sections */
+#Big-sections{
+    display: flex;
+    flex-direction: column;
+}
+.sections{
+    padding: 2em;
+}
+
+#section-one {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+}
+
+#section-one #section-one-one {
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-size: 3rem;
+        margin: 0;
+        padding: 15px;
+    }
+
+    p {
+        padding: 15px;
+        margin: 0;
+        line-height: 40px;
+    }
+}
+
+#section-one .read-button{
+    padding: 15px;
+
+    button{
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        background: inherit;
+    }
+
+    button:hover{
+        transform: scale(1.2);
+    }
+}
+
+#section-one-one .others{
+    padding: 2em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+
+    h3{
+        padding: 0;
+    }
+
+    p{
+        padding: 0;
+    }
+}
+
+#section-one #image {
+    height: 500px;
+    background-image: url(Images/Picture-one.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+#section-two {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 2em;
+    background-color: #fff;
+}
+
+#section-two #image-two {
+    /* background-image: url(Images/Picture-two.jpg); */
+    height: 400px;
+    margin: 2em;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    img {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+#section-two #section-two-div{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .paragraphs {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        line-height: 40px;
+    }
+
+    .other-buttons {
+        button {
+            padding: 15px;
+            border-radius: 5px;
+            margin-inline: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            
+           
+        }
+
+        #projects{
+            background-color: #5e5e57c7;
+            color: #fff;
+        }
+
+        #projects:hover {
+            background-color: #30302dc7;
+        }
+
+        #cv-button:hover{
+            background-color: #30302dc7;
+            color: #fff;
+        }
+    }
+}
