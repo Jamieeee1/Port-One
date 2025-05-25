@@ -97,6 +97,16 @@ header{
     padding: 0;
 }
 
+.skill-front,
+.skill-tools {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-front span,
+.skill-tools span {
+    margin-right: 10px;
+}
 
 .education,
 .new-section {
@@ -104,6 +114,16 @@ header{
     margin: 2em;
     padding: 1em;
     border-radius: 10px;
+}
+
+.education-table{
+    margin-bottom: 10px;
+}
+
+.education-table :nth-child(1) {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: block;
 }
 
 .project-titles {
@@ -154,6 +174,7 @@ header{
     .education-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     }
 
     #section-one-one .others {
